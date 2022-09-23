@@ -1,0 +1,18 @@
+def play():
+    print("installing packages......")
+    print("phone breached....")
+    print("installing packages......")
+    for i in range (1,10):
+        print("usgdfjbfuishfmbnfhlkasnkanscklndsuifgasfklndsuifgasfgjgsdghsdcvsd651646553245646546546845646vuihklndsuifgasfgjgsdghsdc^$^&%&*%^&*%&*%&^&$^&$%&*%&*$%@$#vsdvuihklndsuifgasfgjgsdghsdcvsdvuihklndsuifgasfgjgsdghsdcvsdvuihgjgsdghsdcvsdvuihsjnvskhvsoidhvkndvsjdpvojsdvnoshvihnvsv sdbnds vsd uvbiosdhvoihsdvhdnsvhvisdhv")
+        print("%&*$&*^&*%^#^%*&^&*^&^%&^*&^*(^^*(^*&%&^$^%$&^$^&%&46546845646vuihklndsuifgasfgjgs46546845646vuihklndsuifgasfgjgs46546845646vuihklndsuifgasfgjgs*%^&*%&*%&^&$^&$%&*%&*$%@$46546845646vuihklndsuifgasfgjgs#^&%&*^$^&%&*%^&*%&*%46546845646vuihklndsuifgasfgjgs46546845646vuihklndsuifgasfgjgs&^&$^&$%&*%&*$%@$#^$^&%&*%^&*%&*%&^&$^&$%&*%&*$%@$#^$^&%&*%^&*%&*%&^&$^&$%&*%&*$%@$#^&*$%^$&^%&*%^&$#^&%$^&$^$^&$^&$^&$^&$^&$^&")
+    print("installing packages...... from Rome")
+    print("installing packages...... caesar's grave")
+    print("installing packages...... caesar permits")
+    print("installing packages.....safsdg.5454545485454878")
+    print("installing packages.....safsdg.9383537378")
+    print("installing packages.....safsdg.145478373978")
+    print("installing packages.....safsdg.845478654878")
+    print()
+    print()
+    print()
+    print("Welcome to:")
