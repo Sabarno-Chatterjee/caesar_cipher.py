@@ -10,6 +10,7 @@ alphabet = [
 
 
 def caesar(start_text, shift_amount, cipher_direction):
+    """This function is used to encrypt or decrypt a message"""
     end_text = ""
     if cipher_direction == "decode":
         shift_amount *= -1
