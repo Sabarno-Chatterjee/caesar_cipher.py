@@ -42,3 +42,12 @@ while should_continue:
     if result == "no":
         should_continue = False
         print("Goodbye asshole.")
+
+def caesar(text, shift, direction):
+  crypted_msg = ""
+  for char in text:
+    if direction == "encode":
+        crypted_msg+= alphabet[alphabet.index(char) + shift]
+    elif direction == "decode":
+        crypted_msg += alphabet[alphabet.index(char) - shift]
+  print(crypted_msg)
