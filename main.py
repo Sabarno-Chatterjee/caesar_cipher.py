@@ -1,53 +1,36 @@
 import art
-import fancy
 
+print(art.logo)
 alphabet = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
     'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd',
     'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
     't', 'u', 'v', 'w', 'x', 'y', 'z'
 ]
+encrypt_more = True
 
-
-def caesar(start_text, shift_amount, cipher_direction):
-    """This function is used to encrypt or decrypt a message"""
-    end_text = ""
-    if cipher_direction == "decode":
-        shift_amount *= -1
-    for char in start_text:
-        if char in alphabet:
-            position = alphabet.index(char)
-            new_position = position + shift_amount
-            end_text += alphabet[new_position]
-        else:
-            end_text += char
-
-    print(f"Here's the {cipher_direction}d result: {end_text}")
-
-fancy.play()
-print()
-print()
-print(art.logo)
-
-should_continue = True
-
-while should_continue:
-    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-    text = input("Type your message:\n").lower()
-    shift = int(input("Type the shift number:\n"))
-    shift = shift % 26
-    caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
-
-    result = input("Do you want to continue again, type yes or no?\n")
-    if result == "no":
-        should_continue = False
-        print("Goodbye asshole.")
-
-def caesar(text, shift, direction):
+def caesar_cipher(text, shift, direction):
+  shift = shift % 26
   crypted_msg = ""
+  if (direction == "decode"): shift *= -1 
   for char in text:
-    if direction == "encode":
+    if char in alphabet:
         crypted_msg+= alphabet[alphabet.index(char) + shift]
-    elif direction == "decode":
-        crypted_msg += alphabet[alphabet.index(char) - shift]
-  print(crypted_msg)
+    else:
+      crypted_msg += char
+  print(f"\nThe {direction}ed message is: {crypted_msg}.")
+
+while encrypt_more:
+  
+    direction = input("\n\nType 'encode' to encrypt, type 'decode' to decrypt:\n\n")
+    text = input("\nType your message:\n\n").lower()
+    shift = int(input("\nType the shift number:\n\n"))
+    
+    caesar_cipher(text, shift, direction)
+    play_again = input(("\nDo you want to decode/encode more messages? (Y/N)\n\n").lower())
+    
+    if play_again == "n":
+      encrypt_more = False
+      print("\n\nSee you later, have a nice day!")
+    else:
+      encrypt_more = True
